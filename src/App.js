@@ -6,7 +6,7 @@ import Highcharts from 'highcharts';
 class Chart extends Component {
     componentDidMount() {
         this.chart = new Highcharts[this.props.type || "Chart"](
-            this.props.container,
+            this.refs.chart,
             this.props.options
         );
     }
@@ -17,7 +17,7 @@ class Chart extends Component {
 
     render() {
         return (
-            <div id={this.props.container}></div>
+            <div ref="chart"></div>
         )
     }
 }
