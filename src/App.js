@@ -24,7 +24,6 @@ class Chart extends Component {
 
 class App extends Component {
     render() {
-
         const options = {
             title: {
                 text: 'Fruit Consumption'
@@ -59,7 +58,7 @@ class App extends Component {
                     To get started, edit <code>src/App.js</code> and save to reload.
                 </p>
 
-                <Chart container={'chart'} options={options} />
+                <Chart options={options}/>
             </div>
         );
     }
