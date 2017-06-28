@@ -4,8 +4,8 @@
   "private": true,
   "dependencies": {
     "highcharts": "^5.0.12",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   },
   "devDependencies": {
     "react-scripts": "^1.0.7"
