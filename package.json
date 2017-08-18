@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "highcharts": "^5.0.12",
+    "highcharts": "^5.0.14",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },
   "devDependencies": {
-    "react-scripts": "^1.0.7"
+    "react-scripts": "^1.0.11"
   },
   "scripts": {
     "start": "react-scripts start",
