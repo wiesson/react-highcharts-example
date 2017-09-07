@@ -1,3 +1,5 @@
+# React Highcharts example
+
 Clone the repository and install with `npm` or `yarn` as usal.
 
 ## Install
@@ -11,8 +13,6 @@ yarn add request-fluture
 ```
 
 ## Start
-
-## Install
 
 ```bash
 # If you are using npm
