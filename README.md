@@ -2,14 +2,21 @@
 
 Clone the repository and install with `npm` or `yarn` as usal.
 
+## clone
+
+```bash
+git clone git@github.com:wiesson/react-highcharts.git
+cd react-highcharts
+```
+
 ## Install
 
 ```bash
 # If you are using npm
-npm install request-fluture
+npm install
 
 # If you are using yarn
-yarn add request-fluture
+yarn
 ```
 
 ## Start
