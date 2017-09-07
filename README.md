@@ -1,5 +1,7 @@
 # React Highcharts example
 
+This example demonstrates how Highcharts could be used with React.
+
 Clone the repository and install with `npm` or `yarn` as usal.
 
 ## clone
