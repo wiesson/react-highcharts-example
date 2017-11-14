@@ -16,7 +16,7 @@ class Chart extends Component {
   }
 
   render() {
-    return <div ref={el => this.chartEl = el} />;
+    return <div ref={el => (this.chartEl = el)} />;
   }
 }
 
@@ -24,7 +24,7 @@ class App extends Component {
   render() {
     const options = {
       title: {
-        text: 'Fruit Consumption'
+        text: 'Fruit Consumption',
       },
       xAxis: {
         categories: [
@@ -32,31 +32,31 @@ class App extends Component {
           'Bananas',
           'Oranges',
           'Pineapples',
-          'Blueberries'
-        ]
+          'Blueberries',
+        ],
       },
       yAxis: {
         title: {
-          text: 'Fruit eaten'
-        }
+          text: 'Fruit eaten',
+        },
       },
       chart: {
-        type: 'line'
+        type: 'line',
       },
       series: [
         {
           name: 'Jane',
-          data: [1, 0, 4, 0, 3]
+          data: [1, 0, 4, 0, 3],
         },
         {
           name: 'John',
-          data: [5, 7, 3, 2, 4]
+          data: [5, 7, 3, 2, 4],
         },
         {
           name: 'Doe',
-          data: [0, 0, 0, 1, 0]
-        }
-      ]
+          data: [0, 0, 0, 1, 0],
+        },
+      ],
     };
 
     return (
