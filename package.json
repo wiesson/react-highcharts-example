@@ -8,12 +8,14 @@
     "react-dom": "^16.1.1"
   },
   "devDependencies": {
+    "prettier": "^1.8.2",
     "react-scripts": "^1.0.17"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "format": "prettier --single-quote --trailing-comma es5 --write 'src/**/*.js'"
   }
 }
