@@ -4,9 +4,14 @@ import './App.css';
 import Highcharts from 'highcharts';
 
 class Chart extends Component {
+  constructor(props) {
+    super(props);
+    this.chartContainer = React.createRef();
+  }
+
   componentDidMount() {
     this.chart = new Highcharts[this.props.type || 'Chart'](
-      this.chartEl,
+      this.chartContainer.current,
       this.props.options
     );
   }
@@ -16,7 +21,7 @@ class Chart extends Component {
   }
 
   render() {
-    return <div ref={el => (this.chartEl = el)} />;
+    return <div ref={this.chartContainer} />;
   }
 }
 
