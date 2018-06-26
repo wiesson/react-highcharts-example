@@ -4,11 +4,11 @@
   "private": true,
   "dependencies": {
     "highcharts": "^6.1.0",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2"
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
   },
   "devDependencies": {
-    "prettier": "^1.12.1",
+    "prettier": "^1.13.6",
     "react-scripts": "^1.1.4"
   },
   "scripts": {
