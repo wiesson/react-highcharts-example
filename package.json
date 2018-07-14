@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "highcharts": "^6.1.0",
+    "highcharts": "^6.1.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
   },
   "devDependencies": {
-    "prettier": "^1.13.6",
+    "prettier": "^1.13.7",
     "react-scripts": "^1.1.4"
   },
   "scripts": {
