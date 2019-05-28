@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "highcharts": "^6.1.2",
-    "react": "^16.5.0",
-    "react-dom": "^16.5.0"
+    "highcharts": "^7.1.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "prettier": "^1.14.2",
-    "react-scripts": "^1.1.5"
+    "prettier": "^1.17.1",
+    "react-scripts": "^3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -17,5 +17,18 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "format": "prettier --single-quote --trailing-comma es5 --write 'src/**/*.js'"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie > 0",
+    "not op_mini all"
+  ],
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5"
   }
 }
