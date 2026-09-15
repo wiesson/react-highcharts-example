@@ -1,32 +1,28 @@
 # React Highcharts example
 
-This example demonstrates how Highcharts could be used with React.
+This example demonstrates how Highcharts can be used with plain React — no wrapper library.
+See [`src/Chart.tsx`](src/Chart.tsx) for the component.
 
-Clone the repository and install with `npm` or `yarn` as usal.
+Built with [Vite+](https://viteplus.dev), React 19, TypeScript and Tailwind CSS.
 
-## clone
+## Clone
 
 ```bash
-git clone git@github.com:wiesson/react-highcharts.git
-cd react-highcharts
+git clone git@github.com:wiesson/react-highcharts-example.git
+cd react-highcharts-example
 ```
 
 ## Install
 
 ```bash
-# If you are using npm
-npm install
-
-# If you are using yarn
-yarn
+vp install
 ```
 
-## Start
+## Develop
 
 ```bash
-# If you are using npm
-npm run start
-
-# If you are using yarn
-yarn start
+vp dev      # start the dev server
+vp check    # format, lint and type check
+vp test     # run tests
+vp build    # production build
 ```

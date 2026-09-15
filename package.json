@@ -1,29 +1,41 @@
 {
-  "name": "react-highcharts",
-  "version": "0.1.0",
+  "name": "react-highcharts-example",
+  "version": "1.0.0",
   "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vp dev",
+    "build": "tsc -b && vp build",
+    "preview": "vp preview",
+    "check": "vp check",
+    "lint": "vp lint",
+    "fmt": "vp fmt",
+    "test": "vp test",
+    "prepare": "vp config"
+  },
   "dependencies": {
-    "highcharts": "8.2.2",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "highcharts": "^13.0.2",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
   },
   "devDependencies": {
-    "prettier": "^2.2.0",
-    "react-scripts": "^4.0.1"
+    "@tailwindcss/vite": "^4.3.3",
+    "@testing-library/react": "^16.3.3",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "jsdom": "^30.0.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "vite": "catalog:",
+    "vite-plus": "catalog:"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "format": "prettier --single-quote --trailing-comma es5 --write 'src/**/*.js'"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [">0.2%", "not dead", "not ie > 0", "not op_mini all"],
-  "prettier": {
-    "singleQuote": true,
-    "trailingComma": "es5"
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.4.1",
+      "onFail": "download"
+    }
   }
 }
