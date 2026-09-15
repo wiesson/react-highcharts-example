@@ -17,17 +17,22 @@ export function Chart({ options }: { options: Highcharts.Options }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const chartRef = useRef<Highcharts.Chart | null>(null);
 
-  // Create the chart once, destroy it on unmount.
+  // Reads the latest options without making them a dependency of the mount effect.
+  const createChart = useEffectEvent((container: HTMLDivElement) =>
+    Highcharts.chart(container, options),
+  );
+
+  // The chart is an external system: create it on mount, destroy it on unmount.
   useEffect(() => {
-    if (!containerRef.current) return;
-    chartRef.current = Highcharts.chart(containerRef.current, options);
+    const chart = createChart(containerRef.current!);
+    chartRef.current = chart;
     return () => {
-      chartRef.current?.destroy();
+      chart.destroy();
       chartRef.current = null;
     };
   }, []);
 
-  // Apply option changes to the existing chart instead of re-creating it.
+  // Apply later option changes to the existing chart instead of re-creating it.
   useEffect(() => {
     chartRef.current?.update(options, true, true);
   }, [options]);
@@ -36,7 +41,7 @@ export function Chart({ options }: { options: Highcharts.Options }) {
 }
 ```
 
-- **Mount:** the chart is created once, inside the `div` rendered by React.
+- **Mount:** the chart is created once, inside the `div` rendered by React. `useEffectEvent` gives the mount effect the current `options` without listing them as a dependency, so no lint rule has to be silenced.
 - **Update:** new `options` are applied with `chart.update()`, which keeps animations and avoids a full re-render. Pass a stable `options` object (a module constant or `useMemo`) so the chart only updates when the data really changes.
 - **Unmount:** the chart is destroyed, which removes its DOM and event listeners.
 
