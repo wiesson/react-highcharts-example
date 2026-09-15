@@ -4,6 +4,8 @@ import { defineConfig, lazyPlugins } from "vite-plus";
 
 // https://vite.dev/config/
 export default defineConfig({
+  // Relative asset paths, so the build works under the GitHub Pages sub-path.
+  base: "./",
   staged: {
     "*": "vp check --fix",
   },

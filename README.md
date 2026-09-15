@@ -3,6 +3,8 @@
 This example demonstrates how Highcharts can be used with plain React — no wrapper library.
 See [`src/Chart.tsx`](src/Chart.tsx) for the component.
 
+**Demo:** https://wiesson.github.io/react-highcharts-example/
+
 Built with [Vite+](https://viteplus.dev), React 19, TypeScript and Tailwind CSS.
 
 ## Clone
